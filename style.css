@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: gill  sans , sans-serif;
+}
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #AEC2B6;
+	background-color: #9DC08B;
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1{ 
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: #EDF1D6;
+	margin-bottom: 1rem;
+}
+
+#new-task-form {
+	display: flex;;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#new-task-input {
+	flex: 1 1 0%;
+	background-color: #609966;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: #AEC2B6;
+	font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+	color: #EDF1D6;
+}
+
+#new-task-submit {
+	color: #FC2947;
+	font-size: 1.25rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+p {
+  padding: 2% 20% 2% 10%;
+  color: #367E18;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: #EDF1D6;
+	margin-bottom: 1rem;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: #40513B;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: #AEC2B6;
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+}
+
+.task .content .text:not(:read-only) {
+	color: #FC2947;
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.task .actions .edit {
+  color: orange;
+} 
+
+.task .actions .delete {
+	color: lightgreen;
+}
