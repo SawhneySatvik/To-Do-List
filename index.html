@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To-Do List</title>
+
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	
+	<header>
+		<h1>To-Do List</h1>
+		<form id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="Type your task here..."/>
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="Add task" />
+		</form>
+	</header>
+  <p>It's not enough to be busy,so are the ants. The question is what are you busy about?<br>Start managing your day by creating a to do list.</p>
+	<main>
+		<section class="task-list">
+			<h2>Tasks</h2>
+
+			<div id="tasks">
+
+				<div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="Tasks are mentioned below."
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Done</button>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</main>
+  
+  <p>This site was created using HTML,CSS and JavaScript.</p>
+
+	<script src="main.js"></script>
+</body>
+</html>
